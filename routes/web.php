@@ -26,10 +26,8 @@ Route::get('/', function () {
     //    $posts = \App\Post::all();
 //    dd($posts);
 
-
     //    $post=\App\Post::find(5);
 //    dd($post);
-
 
     //      $posts=\App\Post::where('id','<',10)->orderBy('id','DESC')->get();
 //      dd($posts);
@@ -40,11 +38,19 @@ Route::get('/', function () {
 //        'content'=>'updated content',
 //    ]);
 
+    //    $post=\App\Post::find(1);
+//    $post->title='saved title';
+//    $post->content='saved content';
+//    $post->save();
 
-    $post=\App\Post::find(1);
-    $post->title='saved title';
-    $post->content='saved content';
-    $post->save();
+    //    $post=\App\Post::find(1);
+//    $post->delete();
+
+    //    \App\Post::destroy(2);
+    
+    \App\Post::destroy(3,5,7);
+
+
 
 
 
